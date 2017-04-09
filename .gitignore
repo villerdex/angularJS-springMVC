@@ -1,6 +1,7 @@
 node_modules
 bower_components
 .idea/
+lib
 npm-debug.log
 
 # Elastic Beanstalk Files
