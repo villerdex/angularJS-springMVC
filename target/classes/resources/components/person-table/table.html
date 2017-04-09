@@ -1,0 +1,46 @@
+    <div ng-if="!$ctrl.data.show">
+        <md-content>
+            <md-card>
+                <h1>Person table</h1>
+                <md-table-container>
+                    <table md-table md-progress="$ctrl.getPersons">
+                        <thead md-head md-order="$ctrl.query.order">
+                        <tr md-row>
+                            <th md-column md-order-by="id">Id</th>
+                            <th md-column md-order-by="name">Name</th>
+                            <th md-column md-order-by="address">Address</th>
+                            <th md-column md-order-by="age">Age</th>
+                            <th md-column >Action</th>
+
+                        </tr>
+                        </thead>
+                        <tbody md-body>
+                        <tr md-row ng-repeat="person in $ctrl.Persons | orderBy: $ctrl.query.order" ng-click="$ctrl.onEdit(person)">
+                            <td md-cell>{{person.id }}</td>
+                            <td md-cell>{{person.name  }}</td>
+                            <td md-cell>{{person.address}}</td>
+                            <td md-cell>{{person.age}}</td>
+                            <td md-cell >
+                                <div  ng-click="$ctrl.onDelete(person.id, $event);  $event.stopPropagation();">
+                                    <i class="material-icons">delete</i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr ng-show="$ctrl.Persons <= 0">
+                            <td md-cell colspan="10">No Data for patients</td   >
+                        </tr>
+                        </tbody>
+                    </table>
+                </md-table-container>
+                <div flex="33">
+                    <md-button class="md-raised  md-primary" ng-click="$ctrl.showForm()">Add new</md-button>
+                </div>
+            </md-card>
+
+
+        </md-content>
+
+    </div>
+
+    <!-- form for adding person-->
+    <person-form data='$ctrl.data' ng-if="$ctrl.data.show" call-back="$ctrl.callback"></person-form>

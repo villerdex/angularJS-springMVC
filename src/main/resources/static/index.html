@@ -1,0 +1,58 @@
+<html ng-app="app" >
+<head>
+
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none!important;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="/bower_components/material-design-lite/material.css">
+    <link rel="stylesheet" href="/bower_components/angular-material-data-table/dist/md-data-table.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <!--ANGULAR JS-->
+    <script  type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script  type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+    <script  type="text/javascript" src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script  type="text/javascript" src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script  type="text/javascript" src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script  type="text/javascript" src="/bower_components/angular-material/angular-material.min.js"></script>
+
+    <!--Modules-->
+    <script type="text/javascript" src="/module/App.js" ></script>
+    <script type="text/javascript" src="/module/route.js" ></script>
+
+    <!--services-->
+    <script type="text/javascript" src="/services/httpService.js" ></script>
+
+    <!--Components -->
+    <script  type="text/javascript" src="/components/app-wrapper/app-wrapper.component.js"></script>
+    <script  type="text/javascript" src="/components/home/home.js"></script>
+    <script  type="text/javascript" src="/components/login/login-component.js"></script>
+    <script  type="text/javascript" src="/components/person-table/table-controller.js"></script>
+    <script  type="text/javascript" src="/components/person-form/person-form-component.js"></script>
+
+
+    <!--vendors-->
+    <script  type="text/javascript" src="/bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
+    <!--end vendors-->
+
+    <title>Hello AngularJS</title>
+</head>
+
+<body>
+
+<div ng-view>
+
+</div>
+
+</body>
+
+
+</html>
