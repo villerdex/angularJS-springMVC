@@ -1,0 +1,9 @@
+main\ServicesImp\PersonService.class
+main\ServicesImp\PersonService$1.class
+main\Model\Person.class
+main\Configs\JdbcConfiguration.class
+main\Controller\PersonRestController.class
+main\App.class
+main\Configs\ServicesConfig.class
+main\Services\PersonDAO.class
+main\Model\Response.class

@@ -7,7 +7,11 @@
 
     Service.$inject = ['$http'];
     function Service($http){
-        var base_url = "http://localhost:8080";
+
+        //var base_url = "http://localhost:8080";
+        var base_url = window.location.origin
+        var url = window.location.href;
+        console.log(base_url)
 
         //custom
         var _base_headers = {

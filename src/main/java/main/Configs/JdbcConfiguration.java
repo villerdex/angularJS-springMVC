@@ -19,9 +19,9 @@ public class JdbcConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         //MySQL database we are using
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/sample");//change url
-        dataSource.setUsername("root");//change userid
-        dataSource.setPassword("admin");//change pwd
+        dataSource.setUrl("jdbc:mysql://springangular.cyx71vfuruwn.us-east-2.rds.amazonaws.com:3306/sample");//change url
+        dataSource.setUsername("villerdex");//change userid
+        dataSource.setPassword("awsApp28");//change pwd
 
         //H2 database
         /*

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: Didoy
+Start-Class: main.App
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Version: 1.5.4.RELEASE
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_73
+Main-Class: org.springframework.boot.loader.JarLauncher
+

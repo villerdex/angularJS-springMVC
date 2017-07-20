@@ -1,22 +1,8 @@
 package main;
 
-import main.Configs.JdbcConfiguration;
-import main.Configs.ServicesConfig;
-import main.Model.Person;
-import main.Services.PersonDAO;
-import main.ServicesImp.PersonService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import javax.activation.DataSource;
 
 /**
  * Created by Didoy on 3/20/2017.
@@ -24,7 +10,6 @@ import javax.activation.DataSource;
 @SpringBootApplication
 @EnableAsync
     public class App {
-
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
